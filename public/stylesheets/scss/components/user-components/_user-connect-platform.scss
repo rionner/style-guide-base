@@ -1,0 +1,71 @@
+.user-connect-platform {
+  margin-bottom: $large;
+  padding: 0 $x-large $large;
+
+  [class^='color_lg'] {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-connection {
+    @include flexbox-row-parent;
+    margin-left: $base;
+    padding-bottom: $base;
+    border-bottom: 1px solid $info-color;
+    min-height: 120px;
+  }
+
+  .info {
+    @include flexbox-row-parent;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-right: $base;
+
+    h3 {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .body-text {
+      width: 75%;
+      padding-left: $small;
+    }
+  }
+
+  .actions {
+    width: 30%;
+    text-align: center;
+
+    .primary-button {
+      width: 100%;
+      margin-bottom: $large;
+    }
+    a {
+      @include inline-hover-transition($primary-color, $link-hover);
+      @include italic-text;
+      line-height: $large;
+      text-decoration: underline;
+    }
+  }
+
+  &.-incomplete {
+    .checkmark { display: none; }
+    .info>h3 { margin-bottom: 0; }
+  }
+  &.-in-progress {
+    .checkmark { display: none; }
+  }
+  &.-in-progress, &.-complete {
+    .body-text {
+      @include italic-text;
+      color: $info-color;
+    }
+  }
+  &.-complete {
+    [class^='color_lg'] { position: relative; }
+    .checkmark {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

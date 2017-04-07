@@ -1,0 +1,85 @@
+// === === INPUTS === ===
+// === === === === === === ===
+%input {
+  transition: border-color 0.3s ease-out;
+  padding: 0 $base;
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: 400;
+  border: 1px solid;
+
+  /*// === OVERWRITE DEFAULT AUTOFILL BACKGROUND COLORS ===
+  &:-webkit-autofill {
+    -webkit-box-shadow:;
+    -webkit-text-fill-color:;
+  }
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow:;
+    -webkit-text-fill-color:;
+  }*/
+
+  // === REMOVE IE10 CLEAR FIELD BUTTON ===
+  &::-ms-clear {
+    display: none;
+  }
+
+  // === STATE HANDLERS ===
+  &::placeholder, &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
+      // CHROME / OPERA / SAFARI / FIREFOX 19+ / IE10 / FIREFOX 18-
+      text-overflow: ellipsis;
+  }
+
+  &:focus, &.-active, &.-valid  {
+    border-color: $primary-color;
+  }
+  &.-success {
+    border-color: $success-color;
+  }
+  &:invalid, &.-error {
+    border-color: $alert-color;
+  }
+  &:disabled, &.-disabled {
+    border-color: $disabled-color;
+  }
+}
+
+label.stack {
+  @include flexbox-column-parent;
+}
+
+select, textarea, datalist, .input {
+  @extend %input;
+}
+
+// === BASIC INPUT TYPES ===
+// === === === === === === === === === ===
+input[type=number], input[type=password], input[type=search], input[type=text] {
+  @extend %input;
+}
+
+// === DATE / TIME INPUT TYPES ===
+// === === === === === === === === === ===
+input[type="date"], input[type=datetime-local], input[type=datetime], input[type=month], input[type=time], input[type=week] {
+  @extend %input;
+}
+
+
+// === CONTACT INFO INPUT TYPES ===
+// === === === === === === === === === ===
+input[type=email], input[type=tel], input[type=url] {
+  @extend %input;
+}
+
+
+// === MISC INPUT TYPES ===
+// === === === === === === === === === ===
+input[type=color] {
+  @extend %input;
+}
+
+// === SUBMIT INPUT TYPES ===
+// === === === === === === === === === ===
+.submit, input[type="submit"] {
+  @extend %primary-button;
+}
+

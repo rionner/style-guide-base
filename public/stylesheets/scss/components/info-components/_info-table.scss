@@ -1,0 +1,14 @@
+.info-table {
+  border: 1px solid $info-color;
+  th, td {
+    padding: $base;
+    color: $primary-color;
+    @include open-sans-font;
+  }
+  td + td, th + th { border-left: 1px solid $info-color; }
+  tr + tr { border-top: 1px solid $info-color; }
+  th, tfoot>tr { background-color: $info-color; }
+  tr:nth-child(even) {
+    background-color: $info-color;
+  }
+}

@@ -1,0 +1,35 @@
+.search-bar {
+  .flow {
+    @include flexbox-row-parent;
+    position: relative;
+  }
+  .ion-search {
+    position: absolute;
+    margin-left: $small;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .ion-close-round { display: none }
+  .primary-button {
+    height: 40px;
+    border-left: none;
+  }
+  input[type="search"] {
+    padding-left: $large;
+    padding-right: $large;
+  }
+
+  &.-clear {
+    .ion-close-round {
+      transition: color 0.3s ease;
+      display: initial;
+      position: absolute;
+      left: 210px;
+      font-size: 20px;
+      line-height: 40px;
+      color: $info-color;
+
+      &:hover { color: $warning-color; }
+    }
+  }
+}

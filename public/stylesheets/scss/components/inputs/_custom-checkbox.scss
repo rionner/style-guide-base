@@ -1,0 +1,34 @@
+input[type="checkbox"] {
+  &.custom-checkbox {
+    display: none;
+
+    + label >span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: top;
+      background-color: $primary-background;
+      border-radius: 50%;
+      border: 1px solid $primary-color;
+      >.ion-checkmark-round { display: none; }
+    }
+    + label {
+      font-size: 16px;
+    }
+    &:checked + label >span {
+      @include bold-weight;
+      color: $primary-color;
+      background-color: $success-color;
+      border-color: $success-color;
+
+      >.ion-checkmark-round {
+        display: inline-block;
+        position: relative;
+        bottom: 3px;
+        left: 3px;
+        font-size: 14px;
+        color: $inverse-text;
+      }
+    }
+  }
+}

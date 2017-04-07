@@ -1,0 +1,23 @@
+.tabbed-subnavigation {
+  @include flexbox-row-parent;
+  margin-bottom: $base;
+  padding: 0 $large;
+  border-bottom: 1px solid $primary-color;
+
+  .tab {
+    @include bold-weight;
+    @extend .intro-text;
+    transition: color 0.3s ease;
+    padding: 0 $small;
+    margin: 0 $base;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+  }
+
+  .tab:hover { color: $link-hover; }
+
+  .tab:hover, .tab:active, .tab.selected {
+    cursor: pointer;
+    border-bottom-color: $link-hover;
+  }
+}

@@ -1,0 +1,52 @@
+.account-dropdown {
+  width: 240px;
+
+  .arrow-box {
+    position: relative;
+    padding: 0 $base;
+    background: $primary-background;
+    border: 1px solid $info-color;
+  }
+  .arrow-box:after, .arrow-box:before {
+    bottom: 100%;
+    left: 80%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .arrow-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: $primary-background;
+    border-width: 18px;
+    margin-left: -18px;
+  }
+  .arrow-box:before {
+    border-color: rgba(0, 41, 245, 0);
+    border-bottom-color: $info-color;
+    border-width: 19px;
+    margin-left: -19px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+  li { padding: 0; }
+  a {
+    @include inline-hover-transition($primary-color, $link-hover);
+    @include custom-typography(16px, null, 2px);
+    display: block;
+    padding: $base 0;
+    text-decoration: none;
+    &.account {
+      border-bottom: 1px solid $info-color;
+    }
+    &.logout {
+      border-top: 1px solid $info-color;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.user-platform-stack-graph {
+  @include flexbox-row-parent;
+  height: 46px;
+  width: 100%;
+  margin: $large 0;
+
+  >div>span:first-of-type { @include bold-weight; }
+  >div {
+    padding-top: $tiny;
+    padding-left: $small;
+  }
+  span {
+    font-size: 12px;
+    color: $true-white;
+  }
+
+  /*>.instagram { background-color: $instagram; }
+  >.facebook { background-color: $facebook; }
+  >.rss { background-color: $rss; }
+  >.pinterest { background-color: $pinterest; }
+  >.twitter { background-color: $twitter; }
+  >.snap { background-color: $snap; }
+  >.youtube { background-color: $youtube; }
+  >.linkedin { background-color: $linkedin; }*/
+}

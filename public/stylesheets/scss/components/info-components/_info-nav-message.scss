@@ -1,0 +1,11 @@
+.info-nav-message {
+  min-height: 90px;
+  padding-left: $x-large;
+  padding-right: $x-large;
+  background-color: $primary-color;
+  h1, h3, p {
+    margin: 0;
+    color: $true-white;
+  }
+  h3 { padding: 20px 0; }
+}

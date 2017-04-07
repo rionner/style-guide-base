@@ -1,0 +1,32 @@
+.info-progress-numerical {
+  @include flexbox-row-parent;
+  justify-content: space-between;
+  background-color: $info-color;
+  height: 1px;
+  overflow: visible;
+
+  >span {
+    @include open-sans-font;
+    @include bold-weight;
+    position: relative;
+    bottom: 16px;
+    width: $large;
+    height: $large;
+    line-height: $large;
+    text-align: center;
+    color: $inverse-text;
+    border-radius: 50%;
+    background-color: $info-color;
+
+    >.ion-checkmark-round { display: none; }
+  }
+
+  >.completed {
+    background-color: $success-color;
+    >.ion-checkmark-round { display: inline-block; }
+    >.progress { display: none; }
+  }
+  >.active, >:active {
+    background-color: $primary-color;
+  }
+}

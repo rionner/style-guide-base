@@ -1,0 +1,32 @@
+.secondary-profile-header {
+  @include flexbox-row-parent;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 $base;
+  border-bottom: 1px solid $primary-color;
+
+  a { text-decoration: none; }
+  .page-options {
+    @include flexbox-row-parent;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 75%;
+  }
+  .tab {
+    @include bold-weight;
+    @extend .intro-text;
+    transition: color 0.3s ease;
+    padding: 0 $base;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+  }
+  .tab:hover { color: $link-hover; }
+  .tab:hover, .tab:active, .tab.selected {
+    cursor: pointer;
+    border-bottom-color: $link-hover;
+  }
+  .user-name {
+    border-left: 1px solid $primary-color;
+  }
+  .primary-button { align-self: center; }
+}

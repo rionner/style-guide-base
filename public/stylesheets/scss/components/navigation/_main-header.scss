@@ -1,0 +1,23 @@
+.main-header {
+  @include flexbox-row-parent;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: $large;
+  height: 100px;
+
+  .actions {
+    @include flexbox-row-parent;
+    align-items: center;
+    margin: 0 $base;
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  [class^='ion'] {
+    line-height: 100px;
+    font-size: 30px;
+  }
+
+  .avatar { margin-left: $base; }
+}
+

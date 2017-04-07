@@ -1,0 +1,59 @@
+.custom-select {
+  .arrow-box, .select-options {
+    position: relative;
+    padding: 0 $base $base;
+    background: $primary-background;
+    border: 1px solid $primary-color;
+  }
+  .arrow-box:after, .arrow-box:before {
+    bottom: 100%;
+    left: 80%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .arrow-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: $primary-background;
+    border-width: 18px;
+    margin-left: -18px;
+  }
+  .arrow-box:before {
+    border-color: rgba(0, 41, 245, 0);
+    border-bottom-color: $primary-color;
+    border-width: 19px;
+    margin-left: -19px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+  li {
+    @include inline-hover-transition($primary-color, $link-hover);
+    @include custom-typography(16px, null, 2px);
+    transition: border-bottom-color 0.3s ease;
+    display: block;
+    padding: $base 0;
+    text-decoration: none;
+    border-bottom: 1px solid $info-color;
+    &:hover {
+      border-bottom-color: $link-hover;
+    }
+  }
+  &.-multi {
+    [class^='ion'] {
+      font-size: 20px;
+
+    }
+    li {
+      @include flexbox-row-parent;
+      justify-content: space-between;
+    }
+  }
+}
+

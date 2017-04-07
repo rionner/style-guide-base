@@ -1,0 +1,65 @@
+.custom-switch input { display:none; }
+
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+
+  .slider {
+    transition: .3s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $primary-color;
+
+    span {
+      color: $inverse-text;
+      top: 6px;
+    }
+    span.off {
+      position: absolute;
+      left: 34px;
+    }
+    span.on { display: none; }
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 28px;
+      width: 28px;
+      left: 0px;
+      bottom: 0px;
+      background-color: $primary-color;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
+
+    &.-round { border-radius: 34px; }
+    &.-round:before {
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      bottom: -2px;
+    }
+
+  }
+
+  input:checked + .slider {
+    background-color: $primary-color;
+    span.off { display: none; }
+    span.on {
+      display: inline;
+      position: absolute;
+      left: 8px;
+    }
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(40px);
+    background-color: $success-color;
+  }
+}

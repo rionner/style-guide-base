@@ -1,0 +1,12 @@
+.longform-textarea {
+  padding-top: $base;
+  padding-bottom: $base;
+  line-height: 20px;
+  min-height: 300px;
+  resize: none;
+
+  &::placeholder {
+    line-height: 20px;
+  }
+}
+

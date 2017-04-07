@@ -1,0 +1,16 @@
+.user-platform-totals {
+  padding: $large 0;
+  .platform {
+    @include flexbox-row-parent;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: -30px;
+    h4 { margin-left: $small; }
+  }
+  .total {
+    @include flexbox-column-parent;
+    padding-right: $base;
+  }
+  .count { color: $highlight-text; }
+  .description { @extend .body-text; }
+}

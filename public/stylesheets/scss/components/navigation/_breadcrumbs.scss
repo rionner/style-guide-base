@@ -1,0 +1,4 @@
+.breadcrumbs {
+  @include flexbox-row-parent;
+  >[class^='ion'] { color: $info-color; }
+}

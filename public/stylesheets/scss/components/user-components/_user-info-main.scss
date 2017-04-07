@@ -1,0 +1,22 @@
+.user-info-main {
+  @include flexbox-row-parent;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $x-large;
+  padding-right: $x-large;
+
+  .avatar.-profile {
+    width: 200px;
+    height: 200px;
+    border: $small solid $primary-background;
+    border-radius: 50%;
+  }
+
+  h1 { color: $inverse-text; }
+  .info { margin: 0 $base; }
+  .primary-button {
+    align-self: center;
+    margin-top: 45px;
+  }
+}
+

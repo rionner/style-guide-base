@@ -1,0 +1,8 @@
+.user-portfolio-grid {
+  .portfolio-item {
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+    border: $tiny solid $primary-background;
+  }
+}

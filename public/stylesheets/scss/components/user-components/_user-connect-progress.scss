@@ -1,0 +1,16 @@
+.user-connect-progress {
+  @include flexbox-row-parent;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    margin: 0 0 0 $x-large;
+    padding: $small 0;
+  }
+  .info-progress-numerical {
+    width: 250px;
+    margin-right: $x-large;
+  }
+  .info-progress-bar { width: 100%; }
+}

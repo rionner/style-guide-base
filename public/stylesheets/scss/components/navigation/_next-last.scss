@@ -1,0 +1,9 @@
+.next-last {
+  @include flexbox-row-parent;
+  >.ion-arrow-left-b {
+    border-right-color: $inverse-text;
+  }
+  >.ion-arrow-right-b {
+    border-left-color: $inverse-text;
+  }
+}

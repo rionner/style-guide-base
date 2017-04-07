@@ -1,0 +1,23 @@
+.info-tag {
+  @include open-sans-font;
+  display: inline-block;
+  margin: $tiny;
+  padding: 0 $small;
+  color: $info-color;
+  background-color: $info-color;
+  border: 1px solid $info-color;
+
+  &.-edit {
+    @include button-effects($info-color, $info-color, $info-color, $info-color, $alert-color, null, null, null);
+    padding-right: $tiny;
+    >[class^='ion'] {
+      padding-right: $tiny;
+      padding-left: $small;
+      &:hover { color: $alert-color; }
+    }
+    &:hover {
+      cursor: pointer;
+      [class^='ion'] { color: $alert-color; }
+    }
+  }
+}

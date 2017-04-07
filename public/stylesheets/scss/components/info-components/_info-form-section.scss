@@ -1,0 +1,49 @@
+.info-form-section {
+  @include flexbox-row-parent;
+  padding: $large;
+  border-bottom: 1px solid $primary-color;
+
+  h6 { margin: 0; }
+  [class^='ion'] { color: $primary-color; }
+  input { padding-left: 40px; }
+  .form-section { width: 40%; }
+
+  .form-section:first-of-type {
+    padding-right: $large;
+  }
+
+  .input-container {
+    >[class^='ion'] {
+      position: absolute;
+      padding: 0 $base;
+      line-height: 40px;
+      font-size: 20px;
+    }
+  }
+
+  .form-section>.input-container {
+    margin-bottom: $base;
+  }
+
+  input[type="email"], input[type="password"], input[type="text"] { width: 100%; }
+
+  .inline-message {
+    @include light-weight;
+    @include custom-typography(12px, null, .2px);
+    padding: $tiny $large;
+
+    &.-neutral>[class^='ion'], &.-success>[class^='ion'] { padding-right: $small; }
+    &.-neutral {
+      color: $primary-color;
+      >.ion-ios-circle-outline { display: initial; }
+      >.ion-checkmark-circled { display: none; }
+    }
+    &.-success {
+      >.ion-ios-circle-outline { display: none; }
+      >.ion-checkmark-circled {
+        display: initial;
+        color: $success-color;
+      }
+    }
+  }
+}

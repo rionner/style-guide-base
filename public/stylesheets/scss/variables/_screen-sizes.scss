@@ -1,0 +1,18 @@
+// === WIDTH DEFINITIONS ===
+// === === === === === === === === === ===
+// Not for use in scss
+$width3: 300px;
+$width5: 500px;
+$width7: 700px;
+$width9: 900px;
+$width11: 1100px;
+$width13: 1300px;
+
+// === BROWSER WIDTHS ===
+// === === === === === === === === === ===
+$mobile-min: $width3;
+$mobile-max: $width5;
+$tablet-min: $width7;
+$tablet-max: $width9;
+$desktop-min: $width11;
+$desktop-max: $width13;

@@ -1,0 +1,9 @@
+.info-modal {
+  border: 1px solid $primary-color;
+  >.ion-close-round {
+    @include flexbox-row-parent;
+    justify-content: flex-end;
+    padding: $small;
+    font-size: 16px;
+  }
+}

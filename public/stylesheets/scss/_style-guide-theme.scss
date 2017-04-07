@@ -1,0 +1,83 @@
+body {
+  padding-left: $base;
+  padding-right: $base;
+}
+
+nav, .supplemental-nav {
+  ul {
+    @include flexbox-row-parent;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.display-size {
+  @include display-size;
+}
+
+.placeholder-photo {
+  @include background("/static/assets/img-placeholder.jpg", $primary-color);
+}
+
+.color-block {
+  width: 300px;
+  .swatch { height: 100px; }
+}
+
+.swatch {
+  &.true-navy{ background-color: $true-navy; }
+  &.gray-navy { background-color: $gray-navy; }
+  &.true-sienna { background-color: $true-sienna; }
+  &.sienna-char { background-color: $sienna-char; }
+  &.pale-pink { background-color: $pale-pink; }
+  &.true-raspberry { background-color: $true-raspberry; }
+  &.pale-sage { background-color: $pale-sage; }
+  &.true-white { background-color: $true-white; }
+}
+
+.spacing {
+  border: 1px solid $title-text;
+  margin: $base;
+
+  &.-tiny {
+    width: $tiny;
+    height: $tiny;
+  }
+
+  &.-small {
+    width: $small;
+    height: $small;
+  }
+
+  &.-base {
+    width: $base;
+    height: $base;
+  }
+
+  &.-large {
+    width: $large;
+    height: $large;
+  }
+
+  &.-x-large {
+    width: $x-large;
+    height: $x-large;
+  }
+}
+
+.button-examples { margin-top: $large; }
+
+.user-platform-stack-graph {
+  >.instagram { width: 25%; }
+  >.facebook { width: 20%; }
+  >.rss { width: 10%; }
+  >.pinterest { width: 15%; }
+  >.twitter { width: 10%; }
+  >.snap { width: 15%; }
+  >.youtube { width: 10%; }
+  >.linkedin { width: 10%; }
+}
+
+.img-block, .interest-image, .portfolio-item { background: url("/static/assets/img-placeholder.jpg") no-repeat; }
+

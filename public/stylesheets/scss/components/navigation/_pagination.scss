@@ -1,0 +1,14 @@
+.pagination {
+  @include flexbox-row-parent;
+  >span { margin: 1px; }
+  >[class^='ion'] { color: $info-color; }
+  >.primary-button {
+    @include bold-weight;
+    color: $primary-color;
+    background-color: $primary-background;
+    border-color: $primary-color;
+  }
+  .primary-button:hover {
+    background-color: $button-hover;
+  }
+}

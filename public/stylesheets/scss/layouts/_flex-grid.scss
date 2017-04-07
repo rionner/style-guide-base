@@ -1,0 +1,54 @@
+.layout-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.layout-flex-child-1col {
+  width: 100%;
+  padding: 5% auto;
+}
+
+.layout-flex-child-2col {
+  width: 100%;
+  padding: 10px 2%;
+  @media screen and (min-width: $tablet-max) {
+    width: 45%;
+  }
+}
+
+.layout-flex-child-3col {
+  width: 100%;
+  padding: 10px 1%;
+  @media screen and (min-width: $mobile-max) {
+    width: 40%;
+  }
+  @media screen and (min-width: $tablet-max) {
+    width: 30%;
+  }
+}
+
+.layout-flex-child-4col {
+  width: 100%;
+  padding: 10px 1%;
+  @media screen and (min-width: $tablet-min) {
+    width: 30%;
+  }
+  @media screen and (min-width: $tablet-max) {
+    width: 20%;
+  }
+}
+
+.layout-align-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}

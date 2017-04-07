@@ -1,0 +1,8 @@
+// === === TYPOGRAPHY === ===
+// === === === === === === ===
+// PULL QUOTE TEXT PARAGRAPH STYLES
+.pull-quote {
+  @include italic-text;
+  @include text-color($content-text);
+  @include custom-typography(24px, null, .2px);
+}

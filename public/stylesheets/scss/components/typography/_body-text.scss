@@ -1,0 +1,8 @@
+// === === TYPOGRAPHY === ===
+// === === === === === === ===
+// BODY TEXT PARAGRAPH STYLES
+.body-text {
+  @include standard-weight;
+  @include text-color($content-text);
+  @include custom-typography(14px, 21px, null);
+}

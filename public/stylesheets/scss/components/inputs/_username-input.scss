@@ -1,0 +1,12 @@
+.username-input {
+  .flow {
+    @include flexbox-row-parent;
+  }
+  .service {
+    display: inline-block;
+    padding: 0 $base;
+    line-height: 40px;
+    color: $inverse-text;
+    background-color: $primary-color;
+  }
+}

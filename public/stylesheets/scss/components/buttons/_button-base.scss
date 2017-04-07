@@ -1,0 +1,104 @@
+%button-base {
+  @include button-transition;
+  @include open-sans-font;
+  border-width: 1px;
+  border-style: solid;
+
+  &.-active, &.-valid, &.-inverse:hover {
+    color: $primary-color;
+    background-color: $primary-background;
+    border-color: $primary-color;
+  }
+  &.-active:hover, &.-valid:hover, &.-inverse {
+    color: $inverse-text;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &.-action {
+    color: $inverse-text;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  &.-action:hover {
+    background-color: $button-hover;
+  }
+  &.-info {
+    color: $inverse-text;
+    background-color: $info-color;
+    border-color: transparent;
+  }
+  &.-info:hover {
+    color: $inverse-text;
+    background-color: $info-color;
+  }
+  &.-success {
+    color: $inverse-text;
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+  &.-success:hover {
+    color: $success-color;
+    background-color: $primary-background;
+    border-color: $success-color;
+  }
+  &.-warning {
+    color: $inverse-text;
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+  &.-warning:hover {
+    color: $warning-color;
+    background-color: $primary-background;
+    border-color: $warning-color;
+  }
+  &:invalid, &.-error {
+    color: $inverse-text;
+    background-color: $alert-color;
+    border-color: $alert-color;
+  }
+  &.-error:hover {
+    color: $alert-color;
+    background-color: $primary-background;
+    border-color: $alert-color;
+  }
+  &:disabled, &.-disabled {
+    color: $primary-color;
+    background-color: $disabled-color;
+    border-color: $disabled-color;
+  }
+}
+
+%primary-button {
+  @extend %button-base;
+  padding: 0 $base;
+  height: 38px;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+%split-button {
+  @extend %button-base;
+  @include flexbox-row-parent;
+  flex-wrap: nowrap;
+  padding: 0;
+
+  >span {
+    padding: 0 $base;
+    height: 38px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+  >span:first-of-type {
+    border-right: 1px solid $primary-background;
+  }
+}
+
+%small-button {
+  @extend %button-base;
+  padding: 0 $small;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+

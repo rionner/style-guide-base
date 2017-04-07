@@ -1,0 +1,8 @@
+// === === TYPOGRAPHY === ===
+// === === === === === === ===
+// SMALL TEXT PARAGRAPH STYLES
+.small-text {
+  @include light-weight;
+  @include text-color($content-text);
+  @include custom-typography(12px, 17px, .5px);
+}

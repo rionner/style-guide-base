@@ -1,0 +1,43 @@
+.info-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted $primary-color;
+
+  >.text {
+    @include open-sans-font;
+    transition: opacity 0.3s;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -50px;
+    padding: $small $base;
+    text-align: center;
+    color: $inverse-text;
+    background-color: $primary-color;
+    white-space: nowrap;
+  }
+
+  // ARROW
+  >.text::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: $tiny;
+      border-style: solid;
+      border-color: $primary-color transparent transparent transparent;
+  }
+
+  // SHOW TOOLTIP TEXT ON HOVER
+  &:hover {
+    .text {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+

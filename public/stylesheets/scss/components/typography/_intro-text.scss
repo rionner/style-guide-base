@@ -1,0 +1,8 @@
+// === === TYPOGRAPHY === ===
+// === === === === === === ===
+// INTRO TEXT PARAGRAPH STYLES
+.intro-text {
+  @include standard-weight;
+  @include text-color($content-text);
+  @include custom-typography(18px, 30px, .3px);
+}

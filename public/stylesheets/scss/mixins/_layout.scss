@@ -1,0 +1,49 @@
+// === DOCUMENT LAYOUT & STRUCTURE ===
+// === === === === === === === === === ===
+@mixin max-width($width) {
+  max-width: $width;
+}
+
+// === COMPONENT STRUCTURE ===
+// === === === === === === === === === ===
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin each-border-radius($top-left: null, $top-right: null, $bottom-right: null, $bottom-left: null) {
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-right-radius: $bottom-right;
+  border-bottom-left-radius: $bottom-left;
+}
+
+// === ELEMENT LAYOUT ===
+// === === === === === === === === === ===
+@mixin flexbox {
+  display: flex;
+}
+
+@mixin flexbox-row-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexbox-column-parent {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexbox-inline-row-parent {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+// === DISPLAY WIDTH ===
+// === === === === === === === === === ===
+// To give dimensions to elements with no contents
+// Intended for Style Guide use only
+@mixin display-size {
+  width: 360px;
+  height: 360px;
+}
+

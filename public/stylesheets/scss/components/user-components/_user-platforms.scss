@@ -1,0 +1,10 @@
+.user-platforms {
+  @include flexbox-row-parent;
+
+  h3 { white-space: nowrap; }
+  .platform-icons {
+    @include flexbox-row-parent;
+    align-items: center;
+    >div { margin: $small; }
+  }
+}

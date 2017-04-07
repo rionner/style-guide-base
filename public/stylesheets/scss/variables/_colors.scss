@@ -1,0 +1,56 @@
+// === COLOR DEFINITIONS ===
+// === === === === === === === === === ===
+// Not for use in scss
+
+// MAIN
+$true-navy: rgba(1,30,51,1);
+$true-navy-hex: #011E33;
+
+$gray-navy: rgba(40,65,84,1);
+$gray-navy-hex: #284154;
+
+$true-sienna: rgba(196,46,51,1);
+$true-sienna-hex: #C42E33;
+
+$sienna-char: rgba(217,122,125,1);
+$sienna-char-hex: #D97A7D;
+
+$pale-pink: rgba(255,247,239,1);
+$pale-pink-hex: #FFF7EF;
+
+$pale-sage: rgba(134,204,193,1);
+$pale-sage-hex: #86CCC1;
+
+$true-raspberry: rgba(171,34,80,1);
+$true-raspberry-hex: #AB2250;
+
+$true-white: rgba(255,255,255,1);
+$true-white-hex: #FFFFFF;
+
+// === DESCRIPTIVE VARIABLES ===
+// === === === === === === === === === ===
+// For use in scss
+$title-text: $gray-navy;
+$content-text: $true-navy;
+$inverse-text: $true-white;
+$highlight-text: $pale-sage;
+$link-hover: $pale-sage;
+$button-hover: $gray-navy;
+
+$primary-color: $gray-navy;
+
+$success-color: $true-navy;
+$alert-color: $true-sienna;
+$warning-color: $sienna-char;
+$disabled-color: $pale-pink;
+$info-color: $pale-sage;
+
+$primary-background: $true-white;
+
+$element-box-shadow: $pale-pink;
+
+// $link-color;
+// $secondary-background;
+// $tertiary-background;
+
+
