@@ -3,7 +3,7 @@
   th, td {
     padding: $base;
     color: $primary-color;
-    @include open-sans-font;
+    @include lato-font;
   }
   td + td, th + th { border-left: 1px solid $info-color; }
   tr + tr { border-top: 1px solid $info-color; }

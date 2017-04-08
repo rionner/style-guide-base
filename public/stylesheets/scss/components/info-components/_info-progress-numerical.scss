@@ -6,7 +6,7 @@
   overflow: visible;
 
   >span {
-    @include open-sans-font;
+    @include lato-font;
     @include bold-weight;
     position: relative;
     bottom: 16px;

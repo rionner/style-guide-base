@@ -1,6 +1,6 @@
 %button-base {
   @include button-transition;
-  @include open-sans-font;
+  @include lato-font;
   border-width: 1px;
   border-style: solid;
 
@@ -20,7 +20,7 @@
     border-color: $primary-color;
   }
   &.-action:hover {
-    background-color: $button-hover;
+    background-color: $link-hover;
   }
   &.-info {
     color: $inverse-text;

@@ -2,9 +2,32 @@
   <h1>Project Notes</h1>
   <h2>Base Standards and Code Style Guidelines</h2>
   <hr>
-  <article>
-    <h2>Atomic Design</h2>
-    <p>This project was heavily influenced by <a href="http://atomicdesign.bradfrost.com/chapter-2/">Atomic Design</a> by Brad Frost.</p>
+  <article class="layout-document">
+    <h3>RCSS</h3>
+    <p>This guide adopts the naming conventions and structural standards of <a href="http://rscss.io/index.html">RCSS</a>.</p>
+    <h4>Components</h4>
+    <blockquote cite="http://rscss.io/components.html">Components will be named with at least two words, separated by a dash.</blockquote>
+    <h4>Elements</h4>
+    <blockquote cite="http://rscss.io/elements.html">Each component may have elements. They should have classes that are only one word.</blockquote>
+    <h4>Variants</h4>
+    <blockquote cite="http://rscss.io/variants.html">Classnames for variants will be prefixed by a dash (-).</blockquote>
+    <h4>Layouts</h4>
+    <blockquote cite="http://rscss.io/layouts.html">Components should be made in a way that they're reusable in different contexts. Avoid putting these properties in components:
+      <ul>
+        <li>Positioning (position, top, left, right, bottom)</li>
+        <li>Floats (float, clear)</li>
+        <li>Margins (margin)</li>
+        <li>Dimensions (width, height)*</li>
+      </ul>
+    If you need to define these, try to define them in whatever context they will be in.
+    </blockquote>
+    <h4>Helpers</h4>
+    <blockquote cite="http://rscss.io/helpers.html">Prefix classnames with an underscore. This will make it easy to differentiate them from modifiers defined in the component. Underscores also look a bit ugly which is an intentional side effect: using too many helpers should be discouraged.</blockquote>
+  </article>
+  <hr>
+  <article class="layout-document">
+    <h3>Atomic Design</h3>
+    <p>This project was also influenced by <a href="http://atomicdesign.bradfrost.com/chapter-2/">Atomic Design</a> by Brad Frost. Where we break from RCSS standards, we are using Atomic Design principles</p>
     <h4>Atoms</h4>
     <blockquote cite="http://atomicdesign.bradfrost.com/chapter-2/">If atoms are the basic building blocks of matter, then the atoms of our interfaces serve as the foundational building blocks that comprise all our user interfaces. Therefore these atoms would include basic HTML tags like form labels, inputs, buttons, and other elements that can’t be broken down any further without ceasing to be functional.</blockquote>
     <h4>Molecules</h4>
@@ -17,32 +40,8 @@
     <blockquote cite="http://atomicdesign.bradfrost.com/chapter-2/">Pages are specific instances of templates that replace placeholder content with real representative content.</blockquote>
   </article>
   <hr>
-  <article>
-    <h2>RCSS</h2>
-    <p>This guide keeps the principles, but breaks from the conventions suggested by Atomic Design, instead adopting the naming conventions of <a href="http://rscss.io/index.html">RCSS</a></p>
-    <h4>Components</h4>
-    <blockquote cite="http://rscss.io/components.html">Components will be named with at least two words, separated by a dash.</blockquote>
-    <h4>Elements</h4>
-    <blockquote cite="http://rscss.io/elements.html">Each component may have elements. They should have classes that are only one word.</blockquote>
-    <blockquote></blockquote>
-    <h4>Variants</h4>
-    <blockquote cite="http://rscss.io/variants.html">Classnames for variants will be prefixed by a dash (-).</blockquote>
-    <h4>Layouts</h4>
-    <blockquote cite="http://rscss.io/layouts.html">Components should be made in a way that they're reusable in different contexts. Avoid putting these properties in components:
-      <ul>
-        <li>Positioning (position, top, left, right, bottom)</li>
-        <li>Floats (float, clear)</li>
-        <li>Margins (margin)</li>
-        <li>Dimensions (width, height)*</li>
-      </ul>
-    If you need to define these, try to define them in whatever context they will be in. In this example below, notice that the widths and floats are applied on the list component, not the component itself.
-    </blockquote>
-    <h4>Helpers</h4>
-    <blockquote cite="http://rscss.io/helpers.html">Prefix classnames with an underscore. This will make it easy to differentiate them from modifiers defined in the component. Underscores also look a bit ugly which is an intentional side effect: using too many helpers should be discouraged.</blockquote>
-  </article>
-  <hr>
-  <article>
-    <h2>Icon Font</h2>
-    <p>For ease of use and consistency, this app is referencing the <a href="http://ionicons.com/">Ion Icon</a> CDN for all instances of icon fonts.</p>
+  <article class="layout-document">
+    <h3>Icons</h3>
+    <p>For ease of use and consistency, this app uses the <a href="http://ionicons.com/">Ion Icon</a> CDN for all instances of icon fonts.</p>
   </article>
 </section>

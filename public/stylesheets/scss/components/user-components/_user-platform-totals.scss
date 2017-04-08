@@ -11,6 +11,6 @@
     @include flexbox-column-parent;
     padding-right: $base;
   }
-  .count { color: $highlight-text; }
+  .count { color: $title-text; }
   .description { @extend .body-text; }
 }

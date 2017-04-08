@@ -1,22 +1,27 @@
-.layout-flex-column {
-  display: flex;
-  flex-direction: column;
+.layout-document {
+    @include min-width($mobile-min);
+    @include max-width($desktop-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding: $base;
+}
+
+.layout-column-parent {
+  @include flexbox-column-parent;
   align-items: center;
 }
 
-.layout-flex-parent {
-  display: flex;
-  flex-direction: row;
+.layout-row-parent {
+  @include flexbox-row-parent;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-.layout-flex-child-1col {
+.layout-child-1col {
   width: 100%;
   padding: 5% auto;
 }
 
-.layout-flex-child-2col {
+.layout-child-2col {
   width: 100%;
   padding: 10px 2%;
   @media screen and (min-width: $tablet-max) {
@@ -24,7 +29,7 @@
   }
 }
 
-.layout-flex-child-3col {
+.layout-child-3col {
   width: 100%;
   padding: 10px 1%;
   @media screen and (min-width: $mobile-max) {
@@ -35,7 +40,7 @@
   }
 }
 
-.layout-flex-child-4col {
+.layout-child-4col {
   width: 100%;
   padding: 10px 1%;
   @media screen and (min-width: $tablet-min) {
@@ -46,9 +51,3 @@
   }
 }
 
-.layout-align-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
-}

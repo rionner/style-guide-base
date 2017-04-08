@@ -2,7 +2,7 @@
 // === === === === === === ===
 // TITLES
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  @include open-sans-font;
+  @include lato-font;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   @include text-color($title-text);
@@ -35,18 +35,19 @@ h6, .h6 {
 
 // BODY TEXT STYLES
 p, span, .p {
-  @include open-sans-font;
+  @include lato-font;
 }
 
 // LINKS
 a {
-  @include open-sans-font;
-  @include inline-hover-transition($content-text, $link-hover);
+  @include lato-font;
+  @include inline-hover-transition($title-text, $link-hover);
+  text-decoration: none;
 }
 
 // HTML5 AND OTHER ELEMENTS
 ol, ul, li, label, address, figcaption, blockquote, strong, em, strike, .label, .address, .figcaption, .blockquote, .strong, .em, .strike {
-  @include open-sans-font;
+  @include lato-font;
 }
 ol, ul {
   >li {
@@ -56,10 +57,6 @@ ol, ul {
 label {
   @include light-weight;
   @include custom-typography(12px, null, .2px);
-}
-.list-title {
-  margin-left: 23px;
-  margin-bottom: -$small;
 }
 ol {}
 ul {}

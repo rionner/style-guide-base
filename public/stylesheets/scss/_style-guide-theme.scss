@@ -1,15 +1,14 @@
-body {
-  padding-left: $base;
-  padding-right: $base;
-}
-
 nav, .supplemental-nav {
   ul {
     @include flexbox-row-parent;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 $base;
     list-style: none;
   }
+}
+
+hr {
+  border: 1px dotted $info-color;
 }
 
 .display-size {
@@ -68,16 +67,10 @@ nav, .supplemental-nav {
 
 .button-examples { margin-top: $large; }
 
-.user-platform-stack-graph {
-  >.instagram { width: 25%; }
-  >.facebook { width: 20%; }
-  >.rss { width: 10%; }
-  >.pinterest { width: 15%; }
-  >.twitter { width: 10%; }
-  >.snap { width: 15%; }
-  >.youtube { width: 10%; }
-  >.linkedin { width: 10%; }
-}
-
 .img-block, .interest-image, .portfolio-item { background: url("/static/assets/img-placeholder.jpg") no-repeat; }
+
+#colors>.layout-row-parent, #spacing>.layout-row-parent {
+  justify-content: space-around;
+  >div { padding: $small; }
+}
 

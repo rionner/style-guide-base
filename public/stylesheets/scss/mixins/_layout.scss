@@ -1,5 +1,9 @@
 // === DOCUMENT LAYOUT & STRUCTURE ===
 // === === === === === === === === === ===
+@mixin min-width($width) {
+  min-width: $width;
+}
+
 @mixin max-width($width) {
   max-width: $width;
 }

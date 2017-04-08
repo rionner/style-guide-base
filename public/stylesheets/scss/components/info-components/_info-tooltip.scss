@@ -4,7 +4,7 @@
   border-bottom: 1px dotted $primary-color;
 
   >.text {
-    @include open-sans-font;
+    @include lato-font;
     transition: opacity 0.3s;
     position: absolute;
     z-index: 1;

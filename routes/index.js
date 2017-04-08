@@ -6,6 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Style Index' });
 });
 
+// ELEMENTS
+router.get('/elements', function(req, res, next) {
+  res.render('elements', { title: 'Elements'});
+});
+
 // COMPONENTS
 router.get('/components', function(req, res, next) {
   res.render('components', { title: 'Components'});

@@ -27,30 +27,27 @@ $true-raspberry-hex: #AB2250;
 $true-white: rgba(255,255,255,1);
 $true-white-hex: #FFFFFF;
 
+
 // === DESCRIPTIVE VARIABLES ===
 // === === === === === === === === === ===
 // For use in scss
+
 $title-text: $gray-navy;
 $content-text: $true-navy;
 $inverse-text: $true-white;
-$highlight-text: $pale-sage;
-$link-hover: $pale-sage;
-$button-hover: $gray-navy;
 
-$primary-color: $gray-navy;
-
-$success-color: $true-navy;
-$alert-color: $true-sienna;
-$warning-color: $sienna-char;
-$disabled-color: $pale-pink;
-$info-color: $pale-sage;
-
+$link-hover: $true-raspberry;
 $primary-background: $true-white;
-
+$secondary-background: $pale-pink;
 $element-box-shadow: $pale-pink;
 
-// $link-color;
-// $secondary-background;
-// $tertiary-background;
+$primary-color: $gray-navy;
+$info-color: $true-navy;
+$success-color: $pale-sage;
+$alert-color: $true-sienna;
+$warning-color: $true-sienna;
+$disabled-color: $sienna-char;
+
+
 
 
