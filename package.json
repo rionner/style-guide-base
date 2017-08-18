@@ -14,8 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "del": "^2.2.2",
-    "ejs": "^2.5.5",
-    "express": "^4.14.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.0.0"
   },
