@@ -12,3 +12,4 @@ Note: There is no CSS autoprefixer included in the app build process, and only a
 #Resources and References:
 - http://rscss.io/index.html
 - http://atomicdesign.bradfrost.com/
+- http://ionicons.com/
