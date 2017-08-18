@@ -16,4 +16,4 @@ Note: There is no CSS autoprefixer included in the app build process, and only a
 - http://atomicdesign.bradfrost.com/
 - http://ionicons.com/
 
-- View the app live: https://style-guide-base.herokuapp.com/
+- View the app: https://style-guide-base.herokuapp.com/
