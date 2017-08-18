@@ -3,7 +3,7 @@ In my time as a Front End Dev I've embraced the philosophy of component-based de
 
 This repository/app is intended as a starting point for project styles.
 
-Note: There is no CSS autoprefixer included in the app build process, and only a few manually added cross-browser declarations are included in the source. 
+Note: There is no CSS autoprefixer included in the app build process, and only a few manually added cross-browser declarations are included in the source. Therefore this code should not be considered production ready as it stands.
 
 #Get it Running:
 *npm install
