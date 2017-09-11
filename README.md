@@ -1,4 +1,4 @@
-#Why Does This Exist?
+# Why Does This Exist?
 In my time as a Front End Dev I've embraced the philosophy of component-based design, construction, and styling. To promote and simplify the process of maintaining that philosophy in new projects, this is a simple set of base component styles which can be built upon and customized as needed for new projects. 
 
 This repository/app is intended as a starting point for project styles.
