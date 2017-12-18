@@ -6,10 +6,10 @@ This repository/app is intended as a starting point for project styles.
 Note: There is no CSS autoprefixer included in the app build process, and only a few manually added cross-browser declarations are included in the source. Therefore this code should not be considered production ready as it stands.
 
 # Get it Running:
-*npm install
-*npm update
-*gulp
-*node app
+- `npm install`
+- `npm update`
+- `gulp`
+- `node app`
 
 # Resources and References:
 - http://rscss.io/index.html
